@@ -6,21 +6,34 @@ body{
   font-family: 'Times New Roman', Times, serif;
   background-color: #FFFFFF;
 }
-
+.navbar-nav{
+  margin-left: 330px;
+  gap: 40px;
+}
 .nav-link{
-  color: brown;
+  color: rgba(255,255,255,0.9);
 }
-
 .nav-link:hover{
-  color: rgb(14, 250, 73);
+  color:black;
 }
 
-@media screen and (max-width: 480px) {
-  .navbar-nav {
+  /* Mobile responsiveness - add this to your CSS */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      margin-left: 0 !important;
+      text-align: center;
+      width: 100%;
+      gap: 0px;
+    }
     
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+    }
+    
+    .d-flex.align-items-center.ms-auto {
+      margin-right: 0 !important;
+      justify-content: center;
+      width: 100%;
+      padding: 15px 0;
+    }
   }
-
- 
-
-  
-}
